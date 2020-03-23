@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url(images/fond.webp);
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: gold;
+    font-size: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    color: gold;
+}
+
+header p {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+header p::after , header p::before {
+    content:' '; 
+    display:inline-block; 
+    vertical-align: middle; 
+    width: 35%; 
+    height: 1px; 
+    background: gold;
+
+} 
+
+/****** pour telephone et tablette *****/
+@media screen and (max-width: 1023px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
+main p {
+    font-weight: bold;
+}
+
+table {
+    width: 80%;
+    margin: 4% auto;
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid gold;
+}
+
+
+th {
+    width: 20%;
+    height: auto;
+    border: 1px solid black;
+    background-color: gold;
+}
+td {
+    border: 1px solid gold;
+   
+}
+
+table img {
+    width: 40%;
+}
+
+.add {
+    width: 30%;
+    padding: 1.5%;
+    margin: 3% auto;
+    background-color: gold;
+    color: white;
+    border-radius: 6px;
+}
+
+.add:hover {
+    background-color: rgba(255, 217, 0, 0.637);
+    color: black;
+}
+
+h2 {
+    margin-top: 3%;
+    font-family: 'Dancing Script', cursive;
+}
+
+h2::after , h2::before {
+    content:' '; 
+    display:inline-block; 
+    vertical-align: middle; 
+    width: 35%; 
+    height: 1px; 
+    background: gold;
+    
+}
+
+footer img {
+    width: 3%;
+}
+
+td {
+    font-family: 'Baloo 2', cursive;
+}
+
+main div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main div p {
+    width: 30%;
+    padding: 1%;
+    margin-bottom: 3%;
+}
+
+
+
+
+/***** Classes les objets urgents, normaux , deja achetés et selectionnés******/
+.urgent {
+    background-color:rgb(248, 167, 167);
+}
+
+.ok {
+    background-color: rgb(191, 226, 162);
+}
+
+.select {
+    background-color: rgb(217, 215, 250);
+}
+
+.reste {
+    background-color: rgb(255, 249, 217);
+}
+/*****************************************************************************/
+
+
+
+
+/****** pour telephone et tablette *****/
+@media screen and (max-width: 1023px) {
+    h2::after, h2::before {
+        content: ' ';
+        display: inline-block;
+        vertical-align: middle;
+        width: 26%;
+        height: 1px;
+        background: gold;
+    }
+}
+
+/*******  Page formulaire ******/
+
+form {
+    width: 70%;
+    margin: 1% auto;
+    padding: 2%;
+    text-align: left;
+    background-color: rgb(255, 237, 138);
+    border-radius: 10px;
+    font-family: 'Baloo 2', cursive;
+}
+
+input {
+    display: inline-block;
+    width: 80%;
+    height: 5vh;
+    margin-bottom: 2%;
+}
+
+label {
+    display: inline-block;
+    width: 15%;
+}
+
+#url {
+    width: 74%;
+}
+
+select {
+    display: inline-block;
+    width: 80%;
+    height: 5vh;
+    margin-bottom: 2%;
+}
+
+
+textarea {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.reponse  {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.reponse label {
+    width: 8%;
+}
+#oui, #non {
+    width: 4%;
+    height: 2vh;
+    
+}
+
+.taille {
+    width: 21%;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 30%;
+    margin: 2% auto;
+    text-align: center;
+    background-color: gold;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+   background-color: rgb(158, 134, 0);
+   color: white;
+}
+
+.h1 {
+    font-size: 45px;
+    margin-bottom: 3%;
+    color: grey;
+}
+
+/****** pour telephone et tablette *****/
+@media screen and (max-width: 1023px) {
+    .h1 {
+        font-size: 15px;
+    }
+    
+    form {
+        width: 90%;
+    }
+
+    input, label, select, textarea {
+        display: block;
+    }
+
+    label {
+        width: 100%;
+    }
+
+    .taille {
+        width: 100%;
+    }
+}
+
+.button {
+    display: block;
+    width: 20%;
+    margin: 2% auto;
+    padding: 1%;
+    background-color: grey;
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+
+
+
+
+
+

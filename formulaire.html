@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout a la liste</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="liste.css">
+</head>
+<body>
+
+    <h1 class="h1">Formulaire d'ajout d'objets dans la liste de naissance</h1>
+
+    <form action="liste.html">
+        <label for="nom">Nom de l'objet</label>
+        <input type="text" id="nom" name="nom" required placeholder=" Nom de l'objet ici"> 
+
+        <label for="image">Image de l'objet</label>
+        <input type="file" id="image" name="image" required >
+
+        <label for="categorie">Catégorie :</label>
+        <select name="categorie" id="categorie" >
+            <option value="">--Choisir une catégorie--</option>
+            <option value="meuble">Meuble</option>
+            <option value="higieneSoins">Higiene et soins</option>
+            <option value="accessoires">Accessoires</option>
+            <option value="vetements">Vétements</option>
+            <option value="eveilJouets">Eveil et jouets</option>
+        </select>
+
+        <label for="url" class="taille"> Ou peut on acheter l'objet?</label>
+        <input type="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+
+        <p>Cette achat est il urgent ?</p>
+        <div class="reponse">
+            
+                <label for="oui">Oui</label>
+                <input type="radio" id="oui" name="urgent" value="oui" required>
+           
+    
+            
+                <label for="non">Non</label>
+                <input type="radio" id="non" name="urgent" value="non" required>
+            
+        </div>
+        
+
+
+        <label for="description" class="taille">Description de l'objet : </label>
+        <textarea name="description" id="description" cols="30" rows="10" required></textarea>
+
+        <input type="submit" >
+    </form>
+
+    <a href="liste.html" class="button">Retour à l'accueil</a>
+    
+</body>
+</html>
